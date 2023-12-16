@@ -1,0 +1,2 @@
+# django-mosi
+django
