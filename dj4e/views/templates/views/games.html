@@ -1,0 +1,10 @@
+<html>
+    <h1>Your Guess Is {{guess}}</h1>
+    {% if guess > 42%}
+    <p>Your guess is too high</p>
+    {% elif guess < 42%}
+    <p>Your guess is too low</p>
+    {% else %}
+    <p>Right</p>
+    {% endif%}
+</html>

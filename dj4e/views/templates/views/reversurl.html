@@ -1,0 +1,17 @@
+{% extends 'views/base.html' %}
+{% block content %}
+<p>we want ti use reverse url to if we might change ther url of one app another app wont crash</p>
+<ul>
+    <li><a href="{% url 'admin' %}"">link to : main</li>
+    <li><a href="{% url 'views:main' %}"">link to : main</li>
+    <li><a href="{% url 'views:funky' %}"">link to : funky</li>
+    <li><a href="{% url 'views:danger' %}?guess=42"">link to : danger</li>
+    <li><a href="{% url 'views:templates' %}"">link to : templates</li>
+    <li><a href="{% url 'views:game' 2 %}"">link to : game</li>
+    <li><a href="{% url 'views:loop' %}"">link to : loop</li>
+    <li><a href="{% url 'views:nested' %}"">link to : nested</li>
+    <li><a href="{% url 'views:base' 2 %}"">link to : base</li>
+    <li><a href="{% url 'views:classview' 42 %}"">link to : class view</li>
+</ul>
+
+{% endblock %}

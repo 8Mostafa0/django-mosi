@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Loops</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                {% for x in fruits %}
+                <li>{{ x }}</li>
+                {% endfor %}
+            </ul>
+            {% if nuts %}
+                <p>Number OF Nuts : {{ nuts|length }} .</p>
+            {% else %}
+            <p>No Nuts.</p>
+            {% endif %}
+        </div>
+    </body>
+</html>
